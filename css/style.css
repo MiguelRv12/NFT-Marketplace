@@ -1,0 +1,432 @@
+@font-face {
+  font-family: "Belgrano";
+  src: url(/fonts/Belgrano-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  background: linear-gradient(to right, #FFFFFF 1080px, #2E2F38 1080px);
+}
+
+header {
+  width: 1920px;
+  height: 120px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+header img {
+  margin-top: 33px;
+  margin-left: 160px;
+  margin-bottom: 41px;
+}
+header nav {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 46px;
+  margin-left: 153px;
+  margin-bottom: 47px;
+}
+header nav ul {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 56px;
+  margin: 0px;
+}
+header nav ul a {
+  color: #2E2F38;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 27px;
+  margin-top: 36px;
+  margin-left: 630px;
+  margin-bottom: 36px;
+}
+header aside a {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+header aside button {
+  display: flex;
+  padding: 16px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  background-color: #FA504D;
+  border: 0px;
+  display: flex;
+  width: 140px;
+  height: 48px;
+  padding: 8px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+header aside button a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header aside button:hover {
+  background-color: #fa4f4c;
+}
+
+main {
+  width: 1920px;
+  display: grid;
+  grid-template-columns: 1080px 840px;
+  grid-template-rows: auto auto;
+  grid-template-areas: "hero ." "featured aside";
+  background-image: url(/img/image.png);
+  background-position: top 32px left 1130px;
+  background-size: 650px 650px;
+  background-repeat: no-repeat;
+}
+main div.hero {
+  grid-area: hero;
+  width: 920px;
+  height: 444px;
+  flex-shrink: 0;
+  margin-top: 80px;
+  margin-left: 160px;
+}
+main div.hero h1 {
+  width: 920px;
+  color: #2E2F38;
+  font-family: "Belgrano", serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px; /* 133.333% */
+  margin: 0px;
+  padding: 0px;
+}
+main div.hero p.subtitulo {
+  width: 648px;
+  color: #8E8E8E;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+  margin: 0px;
+  padding: 0px;
+}
+main div.hero div.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+main div.hero div.buttons button.mainbutton {
+  display: flex;
+  padding: 16px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  background-color: #FA504D;
+  border: 0px;
+  width: 240px;
+  height: 60px;
+}
+main div.hero div.buttons button.mainbutton a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+main div.hero div.buttons button.mainbutton:hover {
+  background-color: #fa4f4c;
+}
+main div.hero div.buttons button.mainbutton a {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+main div.hero div.buttons button.sidebutton {
+  width: 160px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border: 0px;
+  background-color: #FFFFFF;
+  margin-left: 32px;
+}
+main div.hero div.buttons button.sidebutton a {
+  color: #2E2F38;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+main div.hero div.buttons button.sidebutton img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+main section.featured {
+  grid-area: featured;
+  width: 848px;
+  height: 305px;
+  flex-shrink: 0;
+  margin-left: 160px;
+  margin-top: 74px;
+  margin-bottom: 57px;
+}
+main section.featured h2 {
+  color: #2E2F38;
+  font-family: "Belgrano", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+main section.featured div.framework {
+  width: 408px;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+main section.featured div.framework article {
+  width: 408px;
+  height: 240px;
+  flex-shrink: 0;
+}
+main section.featured div.framework article img {
+  width: 392px;
+  height: 224px;
+  border: 1px solid #8E8E8E;
+  padding: 4px;
+}
+main aside {
+  grid-area: aside;
+  margin-left: 72px;
+  margin-top: 50px;
+  margin-bottom: 52px;
+}
+main aside div.details {
+  width: 544px;
+  height: 171px;
+  flex-shrink: 0;
+  background: #FFFFFF;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "text . price" "button button button";
+  padding: 32px;
+}
+main aside div.details div.text {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 16px;
+}
+main aside div.details div.text img {
+  width: 63px;
+  height: 64px;
+}
+main aside div.details div.text div {
+  width: 147px;
+  height: 67px;
+}
+main aside div.details div.text div p {
+  color: #8E8E8E;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+main aside div.details div.text div h2 {
+  color: #2E2F38;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 4px;
+}
+main aside div.details div.price {
+  grid-area: price;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 101px;
+  height: 67px;
+  flex-shrink: 0;
+  gap: 4px;
+}
+main aside div.details div.price p {
+  color: #8E8E8E;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+main aside div.details div.price h2 {
+  color: #2E2F38;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 9px;
+}
+main aside div.details div.button {
+  grid-area: button;
+  display: flex;
+  margin-top: 24px;
+  padding-top: 32px;
+  border-top: 1px solid black;
+}
+main aside div.details div.button button.mainbutton {
+  display: flex;
+  padding: 16px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  background-color: #FA504D;
+  border: 0px;
+  display: flex;
+  width: 264px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+main aside div.details div.button button.mainbutton a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+main aside div.details div.button button.mainbutton:hover {
+  background-color: #fa4f4c;
+}
+main aside div.details div.button button.mainbutton a {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+main aside div.details div.button button.sidebutton {
+  display: flex;
+  width: 264px;
+  height: 48px;
+  padding: 16px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+}
+main aside div.details div.button button.sidebutton a {
+  color: #FA504D;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+main aside div.number {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 72px;
+  margin-top: 40px;
+  margin-left: 7px;
+  height: 48px;
+  width: 600px;
+}
+main aside div.number ul {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 72px;
+  margin: 0px;
+}
+main aside div.number ul p {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 48px;
+  margin: 0px;
+  padding: 0px;
+}
+main aside div.number ul p span {
+  color: #FA504D;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 8px;
+}/*# sourceMappingURL=style.css.map */
